@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="topbar">
+        <a href="/">Log out</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 mt-1">
+        <div class="card text-center sidebar">
+          <div class="card-body">
+            <img src="images/profilePic.jpg" class="rounded-circle" width="150">
+            <div class="mt-3">
+              <h3>Name Surname</h3>
+              <a href="/">Home</a>
+              <a href="Contacts.html">Contacts</a>
+              <a href="">Edit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8 mt-1">
+          <div class="card mb-3 content">
+            <h1 class="m-3 pt-3">About</h1>
+              <form action="profile" method="post">
+              <table>
+                  {{#each users}}
+                      <tr>
+                          <h4>Username: {{ username }}</h4>
+                          <h4>Email: {{ email }}</h4>
+                          <h4>Password: {{ password }} </h4>
+                      </tr>
+                  {{/each}}
+              </table>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="TRUST US YOUR PREFERENCES!">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="HOME.css" media="screen">
+    <link rel="stylesheet" href="style.css" media="screen">
+
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900">
+
+    <meta property="og:title" content="HOME">
+    <meta property="og:type" content="website">
+
+    <title>Laptops advertisement website</title>
+
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+    <style>
+     #map {
+       height: 500px;
+       width: 900px;
+       margin-right: 200px;
+       margin-top: 30px;
+       margin-left: 250px;
+       margin-bottom: 100px;
+       border: 3px;
+       border-radius: 25px;
+       box-shadow: 10px 15px 5px #7FFFD4;
+     }
+
+     .container8 {
+       margin-top: 100px;
+       padding: 32px;
+     }
+
+     .select-box {
+       position: relative;
+       display: flex;
+       width: 400px;
+       flex-direction: column;
+     }
+
+     .select-box .options-container {
+       background: #2f3640;
+       color: #f5f6fa;
+       max-height: 0;
+       width: 100%;
+       opacity: 0;
+       transition: all 0.4s;
+       border-radius: 8px;
+       overflow: hidden;
+
+       order: 1;
+     }
+
+     .selected {
+       background: #2f3640;
+       border-radius: 8px;
+       margin-bottom: 8px;
+       color: #f5f6fa;
+       position: relative;
+
+       order: 0;
+     }
+
+     .selected::after {
+       content: "";
+       background: url("images/arrow-down.svg");
+       background-size: contain;
+       background-repeat: no-repeat;
+
+       position: absolute;
+       height: 100%;
+       width: 32px;
+       right: 10px;
+       top: 5px;
+
+       transition: all 0.4s;
+     }
+
+     .select-box .options-container.active {
+       max-height: 240px;
+       opacity: 1;
+       overflow-y: scroll;
+       margin-top: 54px;
+     }
+
+     .select-box .options-container.active + .selected::after {
+       transform: rotateX(180deg);
+       top: -6px;
+     }
+
+     .select-box .options-container::-webkit-scrollbar {
+       width: 8px;
+       background: #0d141f;
+       border-radius: 0 8px 8px 0;
+     }
+
+     .select-box .options-container::-webkit-scrollbar-thumb {
+       background: #525861;
+       border-radius: 0 8px 8px 0;
+     }
+
+     .select-box .option,
+     .selected {
+       padding: 12px 24px;
+       cursor: pointer;
+     }
+
+     .select-box .option:hover {
+       background: #414b57;
+     }
+
+     .select-box label {
+       cursor: pointer;
+     }
+
+     .select-box .option .radio {
+       display: none;
+     }
+
+     /* Searchbox */
+
+     .search-box input {
+       width: 100%;
+       padding: 12px 16px;
+       font-family: "Roboto", sans-serif;
+       font-size: 16px;
+       position: absolute;
+       border-radius: 8px 8px 0 0;
+       z-index: 100;
+       border: 8px solid #2f3640;
+
+       opacity: 0;
+       pointer-events: none;
+       transition: all 0.4s;
+     }
+
+     .search-box input:focus {
+       outline: none;
+     }
+
+     .select-box .options-container.active ~ .search-box input {
+       opacity: 1;
+       pointer-events: auto;
+     }
+   </style>
+
+    <meta property="og:title" content="HOME">
+    <meta property="og:type" content="website">
+  </head>
+
+  <body class="u-body u-xl-mode">
+  <script>
+      if(req.session.lastentry === undefined) {
+          req.session.lastentry = Date.now() / 1000
+          res.send('TIME')
+      }else {
+          let time = Date.now() / 1000
+          let difTime = Math.trunc(time - req.session.lastentry)
+          req.session.lastentry = time
+          res.send("<h1>Your time visit : " + difTime + " sec </h1>")
+      }
+  </script>
+  <header class="u-black u-clearfix u-header u-header" id="sec-adc2">
+      <div class="u-clearfix u-sheet u-sheet-1">
+
+
+        <a href="" class="u-image u-logo u-image-1" data-image-width="690" data-image-height="388">
+          <img src="images/ezgif.com-gif-maker.gif" class="u-logo-image u-logo-image-1">
+        </a>
+        <a href="HOME.php" data-page-id="333829213" class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-btn u-button-style u-none u-text-palette-1-base u-btn-1">
+          <br>
+        </a>
+
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-0 u-unstyled u-nav-1">
+              <li class="u-nav-item"><a class="u-border-2 u-border-active-grey-30 u-border-grey-30 u-border-hover-grey-30 u-border-no-bottom u-border-no-left u-border-no-top u-button-style u-nav-link u-text-active-custom-color-2 u-text-hover-palette-1-base u-text-white" href="index" style="padding: 0px 20px;">HOME</a></li>
+              <li class="u-nav-item"><a class="u-border-2 u-border-active-grey-30 u-border-grey-30 u-border-hover-grey-30 u-border-no-bottom u-border-no-left u-border-no-top u-button-style u-nav-link u-text-active-custom-color-2 u-text-hover-palette-1-base u-text-white" href="profile" style="padding: 0px 20px;">Account</a></li>
+              <li class="u-nav-item"><a class="u-border-2 u-border-active-grey-30 u-border-grey-30 u-border-hover-grey-30 u-border-no-bottom u-border-no-left u-border-no-top u-button-style u-nav-link u-text-active-custom-color-2 u-text-hover-palette-1-base u-text-white" href="Contacts.html" style="padding: 0px 20px;">Contacts</a></li>
+              <li class="u-nav-item"><a class="u-border-2 u-border-active-grey-30 u-border-grey-30 u-border-hover-grey-30 u-border-no-bottom u-border-no-left u-border-no-top u-button-style u-nav-link u-text-active-custom-color-2 u-text-hover-palette-1-base u-text-white" href="rega" style="padding: 0px 20px;">Sign Up</a></li>
+              <li class="u-nav-item"><a class="u-border-2 u-border-active-grey-30 u-border-grey-30 u-border-hover-grey-30 u-border-no-bottom u-border-no-left u-border-no-top u-button-style u-nav-link u-text-active-custom-color-2 u-text-hover-palette-1-base u-text-white" href="login" style="padding: 0px 20px;">Sign In</a></li>
+            </ul>
+          </div>
+
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="index">HOME</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contacts.html">Contacts</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="profile">Account</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="rega">Sign Up</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="login">Sign In</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="u-clearfix u-image u-section-1" id="sec-59ed" data-image-width="3840" data-image-height="2160">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-custom-font u-font-titillium-web u-text u-text-white u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="">TRUST US YOUR PREFERENCES!</h2>
+        <a href="allprod.html" class="u-border-6 u-border-hover-custom-color-8 u-border-white u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-custom-font u-font-titillium-web u-none u-radius-0 u-text-hover-custom-color-8 u-text-white u-top-left-radius-0 u-top-right-radius-0 u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="2000" data-animation-direction="X">LET'S CHOOSE</a>
+      </div>
+    </section>
+
+
+    <section class="u-clearfix u-gradient u-section-2" id="sec-5ba8">
+      <div class="u-clearfix u-sheet u-sheet-1">
+
+        <div class="emptyBackground">
+	<div class="categories">
+		<div class="small-container">
+			<h2 class="u-custom-font u-font-titillium-web u-text u-text-white u-text-1" style="  margin: 0 auto 80px; text-align: center;">Categories</h2>
+			<div class="row">
+				<div class="col-3">
+					<a href="gamelap.html"><img src="images/categ1.jpg" style="width: 350px; height: 250px;"></a>
+				</div>
+				<div class="col-3">
+					<a href="studylap.html"><img src="images/categ2.jpg" style="width: 350px; height: 250px;"></a>
+				</div>
+				<div class="col-3">
+					<a href="periphery.html"><img src="images/categ3.jpg" style="width: 350px; height: 250px;"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+        </div>
+
+	<div class="categories1">
+		<div class="small-container">
+			<h2 class="u-custom-font u-font-titillium-web u-text u-text-white u-text-1" style="  margin: 0 auto 80px; text-align: center;">Featured Products</h2>
+			<div class="row">
+				<div class="col-4">
+					<a href="applemac.html">
+					<img src="assets/f_apple.jpg" style="width: 230px; height: 230px;">
+					<h5>Apple MacBook Pro M1 13</h5>
+					</a>
+				</div>
+				<div class="col-4">
+					<a href="asus.html">
+					<img src="images/f_asus.jpg" style="width: 230px; height: 230px;">
+					<h5>ASUS ROG STRIX G15 G513IH</h5>
+				</a>
+				</div>
+				<div class="col-4">
+					<a href="log.html">
+					<img src="assets/f_log.jpg" style="width: 230px; height: 230px;">
+					<h5>Logitech G102</h5>
+				</a>
+				</div>
+				<div class="col-4">
+          <a href="beyer.html">
+					<img src="assets/f_beyer.jpg" style="width: 230px; height: 230px;">
+					<h5>Beyerdinamic DT 240 Pro</h5>
+          </a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <h2 class="u-custom-font u-font-titillium-web u-text u-text-white u-text-1" style="  margin: 0 auto 80px; text-align: center;">List of electronic devices store</h2>
+    <div class = "row">
+      <div id = "map"></div>
+    </div>
+
+    <script src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyA-EE7EabIM9Hvh0mF5Z-DDWrWXmAdaPV4&callback=initMap" async defer></script>
+
+    <script>
+      function initMap(){
+      var loc = {lat: 51.175167, lng: 71.418098 } ;
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: loc,
+        zoom: 17
+      });
+      var marker = new google.maps.Marker( {
+        map: map,
+        position: loc,
+        title: 'Белый Ветер'
+      });
+              }
+    </script>
+
+    <script type="text/javascript">
+      const selected = document.querySelector(".selected");
+      const optionsContainer = document.querySelector(".options-container");
+      const searchBox = document.querySelector(".search-box input");
+      const optionsList = document.querySelectorAll(".option");
+      selected.addEventListener("click", () => {
+      optionsContainer.classList.toggle("active");
+      searchBox.value = "";
+      filterList("");
+      if (optionsContainer.classList.contains("active")) {
+        searchBox.focus();
+      }
+    });
+      optionsList.forEach(o => {
+        o.addEventListener("click", () => {
+          selected.innerHTML = o.querySelector("label").innerHTML;
+          optionsContainer.classList.remove("active");
+        });
+      });
+      searchBox.addEventListener("keyup", function(e) {
+        filterList(e.target.value);
+        });
+        const filterList = searchTerm => {
+          searchTerm = searchTerm.toLowerCase();
+          optionsList.forEach(option => {
+          let label = option.firstElementChild.nextElementSibling.innerText.toLowerCase();
+            if (label.indexOf(searchTerm) != -1) {
+              option.style.display = "block";
+              } else {
+                option.style.display = "none";
+              }
+          });
+        };
+      </script>
+
+          <script src="db.js"></script>
+
+      <script type = "module">
+        let hide = document
+      </script>
+    </div>
+  </section>
+
+  </body>
+</html>
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+<div class="container">
+    <div class="main">
+        <div class="topbar">
+            <a href="/">Log out</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 mt-1">
+            <div class="card text-center sidebar">
+                <div class="card-body">
+                    <img src="images/profilePic.jpg" class="rounded-circle" width="150">
+                    <div class="mt-3">
+                        <h3>Name Surname</h3>
+                        <a href="/">Home</a>
+                        <a href="Contacts.html">Contacts</a>
+                        <a href="add_user">Add User</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 mt-1">
+                <div class="card mb-3 content">
+                    <h1 class="m-3 pt-3">About</h1>
+                    <form action="admin" method="post">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col"><a href="/sort_by_username">Sorting by name</a></th>
+                                <th scope="col"><a href="/sort_by_email">Sorting by email</a></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {{#each users}}
+                                <tr>
+                                    <td>{{inc @index}}</td>
+                                    <td>{{ username }}</td>
+                                    <td>{{ email }}</td>
+                                    <td><a href="/edit_user/{{username}}">Edit</a></td>
+                                    <td><a href="/delete_user/{{username}}">Delete</a></td>
+                                </tr>
+                            {{/each}}
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
