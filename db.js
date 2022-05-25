@@ -11,7 +11,7 @@ const {check} = require('express-validator')
 const UsersSchema = require('./Users')
 const ModSchema = require('./Moderators')
 
-mongoose.connect('mongodb://127.0.0.1:27017/userDataBase',{
+mongoose.connect('mongodb+srv://diaskrv:123456ddd@cluster0.ym1ax.mongodb.net/?retryWrites=true&w=majority',{
     useNewUrlParser:true,
     useUnifiedTopology: true
 })
